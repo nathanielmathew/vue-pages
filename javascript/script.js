@@ -12,7 +12,7 @@ function start()
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
 				
-				document.getElementById("SOSC").innerHTML "Counting down...";
+				document.getElementById("SOSC").innerHTML ="Counting down...";
 				
 				if(difference>0)
 				{
