@@ -37,6 +37,8 @@ function start()
 					document.getElementById("hour").disabled = false;	
 					document.getElementById("minute").disabled = false;
 					document.getElementById("second").disabled = false;
+
+					document.getElementById("start").innerHTML="START"
 				}
 				
 				
