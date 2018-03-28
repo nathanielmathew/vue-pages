@@ -12,7 +12,7 @@ function start()
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
 				
-				document.getElementById("SOSC").innerHTML = difference;//"Counting down...";
+				document.getElementById("SOSC").innerHTML "Counting down...";
 				
 				if(difference>0)
 				{
@@ -60,7 +60,7 @@ function reset()																/*Function to stop countdown and set input boxes
 		document.getElementById("hour").value = 00;	
 		document.getElementById("minute").value = 00;	
 		document.getElementById("second").value = 00;
-		
+
 		document.getElementById("hour").disabled = false;
 		document.getElementById("minute").disabled = false;
 		document.getElementById("second").disabled = false;
