@@ -63,6 +63,7 @@ function start()
 
 function reset()																/*Function to stop countdown and set input boxes to 0:0:0*/
 {		
+		document.getElementById("action").src="./images/start.png";
 		document.getElementById("SOSC").innerHTML ="By SOSC";
 		difference=0;
 		document.getElementById("hour").value = "00";	
