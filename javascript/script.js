@@ -8,14 +8,17 @@ function start()
 {	if(document.getElementById("start").innerHTML=="START")
 		{
 			document.getElementById("start").innerHTML="PAUSE";
+			document.getElementById("action").src="./images/pause.png";
+
 			difference=1;
 			var timer = setInterval(function()										/*Timer to update information and perform operations every 1 second*/
 			{
 				
-				document.getElementById("SOSC").innerHTML ="Counting down...";
+				
 				
 				if(difference>0)
 				{
+				document.getElementById("SOSC").innerHTML ="Counting down...";
 				acceptTime();
 				difference--;
 				h = Math.floor(difference/(60*60));                  			  /*To Round Hour to lowest integer value*/
@@ -46,7 +49,9 @@ function start()
 		}
 	else if (document.getElementById("start").innerHTML=="PAUSE") 
 	{
+		document.getElementById("SOSC").innerHTML ="Paused";
 		document.getElementById("start").innerHTML="START"
+		document.getElementById("action").src="./images/start.png";
 		difference=0;
 		document.getElementById("hour").disabled = false;
 		document.getElementById("minute").disabled = false;
@@ -57,11 +62,12 @@ function start()
 }
 
 function reset()																/*Function to stop countdown and set input boxes to 0:0:0*/
-{
+{		
+		document.getElementById("SOSC").innerHTML ="By SOSC";
 		difference=0;
-		document.getElementById("hour").value = 00;	
-		document.getElementById("minute").value = 00;	
-		document.getElementById("second").value = 00;
+		document.getElementById("hour").value = "00";	
+		document.getElementById("minute").value = "00";	
+		document.getElementById("second").value = "00";
 
 		document.getElementById("hour").disabled = false;
 		document.getElementById("minute").disabled = false;
