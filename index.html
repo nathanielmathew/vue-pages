@@ -1,36 +1,21 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
-		<title>Countdown Timer</title>
+		<title>Vue Page</title>
 
 		<!--Let browser know website is optimized for mobile-->
-      		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 	</head>
 
 	<body>
-		<h1 id="countdown" class="h1 countdown">COUNTDOWN TIMER 1.0</h1>
-		<h4 id="SOSC" class="h4 SOSC">By SOSC</h4>
-
-		<div align="center" class="div timeboxes">
-			<input type="number" id="hour" value="00"> :
-			<input type="number" id="minute" value="00"> :
-			<input type="number" id="second" value="00">
+		<div id="app">
+			<p v-text="inputmessage"></p>
+			<input type="text" v-model="name"></input>
+			<p v-text	="message + name + end"></p>
+		
+		
 		</div>
-
-		<div align="center">
-
-			<button class="button start" onclick="start()">
-			<div id="start" class="div inv">START</div>
-			<img  id="action" src="./images/start.png">
-			</button>
-
-			<button class="button reset" onclick="reset()">
-			<div id="reset" class="div inv">RESET</div>
-			<img src="./images/stop.png">
-			</button>
-
-		</div>
-	<img align="center" src="./images/SOSC.jpg" style="height: 40%; width: 30%;">
 		<script type="text/javascript" src="javascript/script.js"></script>
 	</body>
 

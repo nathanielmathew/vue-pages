@@ -1,79 +1,17 @@
-body{
+body, input{
     text-align: center;
-    background: #0bde97;
+    border-color: skyblue;
     font-family: sans-serif;
-    font-weight: 100;
+    font-size: 42px;
+    padding: 10px;
+    color: skyblue;
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
-.countdown{                                                        
-  color: #ffffff;
-  font-family: "Verdana";
-  font-size: 60px;
-  margin: 40px 0px 20px;
-  
-}
-.SOSC{
-  color: #191919;
-  font-size: 25px;
-
-}
-
-.timeboxes{                                                 /*for the size and colour of the colons*/
-    color: #ffffff;
-    font-size: 80px;
-}
-input{                                                      /*for the iput boxes*/
-    background: #0bde97;
-    color: #ffffff;
-    font-size: 70px;
-    border-color: #ef006f;
-    font-family: "Verdana";
-    font-weight: "bold";
-    border: none;
-    height:100px;
-    width:100px; 
-    text-align: center;
-}
-
-.start{                                                     /*Start button effects*/
-  padding: 15px 15px;
-  cursor: pointer;
-  outline: none;
-  color: #008e05;
-  background-color: #fcfcfc;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 3px #999;
-}
-
-.start:hover {background-color: #dddbdb}
-
-.start:active {
-  background-color: #aaaaaa;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
-.reset{                                                       /*Stop button effects*/
-  padding: 15px 15px;
-  cursor: pointer;
-  outline: none;
-  color: #ff0000;
-  background-color: #fcfcfc;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 3px #999;
-}
-
-.reset:hover {background-color: #dddbdb}
-
-.reset:active {
-  background-color: #aaaaaa;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.inv{
-  font-size: 0px;
-}
